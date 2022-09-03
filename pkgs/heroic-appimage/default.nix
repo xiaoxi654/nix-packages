@@ -19,7 +19,7 @@ appimageTools.wrapType2 {
     mkdir -p $out/share/${pname}
     cp -a ${appimageContents}/locales $out/share/${pname}
     cp -a ${appimageContents}/resources $out/share/${pname}
-    install -m 444 -D ${appimageContents}/heroic-appimage.desktop -t $out/share/applications
+    install -m 444 -D ${appimageContents}/heroic.desktop $out/share/applications/heroic-appimage.desktop
     cp -a ${appimageContents}/usr/share/icons $out/share/
     substituteInPlace $out/share/applications/heroic-appimage.desktop \
       --replace 'Exec=AppRun' 'Exec=heroic-appimage'

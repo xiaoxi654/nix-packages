@@ -14,8 +14,8 @@
   modules = import ./modules; # NixOS modules
   overlays = import ./overlays; # nixpkgs overlays
 
-  example-package = pkgs.callPackage ./pkgs/example-package { };
   osu-lazer-appimage = pkgs.callPackage ./pkgs/osu-lazer-appimage { };
+  heroic-appimage = pkgs.callPackage ./pkgs/heroic-appimage { };
   # some-qt5-package = pkgs.libsForQt5.callPackage ./pkgs/some-qt5-package { };
   # ...
 }
