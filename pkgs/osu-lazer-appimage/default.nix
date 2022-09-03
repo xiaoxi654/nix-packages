@@ -3,8 +3,7 @@
 let
   pname = "osu-lazer-appimage";
   version = "2022.902.1";
-  name = "osu-lazer-appimage-${version}";
-  nameExecutable = pname;
+  name = "${pname}-${version}";
   src = fetchurl {
     url = "https://github.com/ppy/osu/releases/download/${version}/osu.AppImage";
     name = "osu-${version}.AppImage";
