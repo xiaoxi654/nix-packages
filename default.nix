@@ -15,7 +15,6 @@
   overlays = import ./overlays; # nixpkgs overlays
 
   osu-lazer-appimage = pkgs.callPackage ./pkgs/osu-lazer-appimage { };
-  heroic-appimage = pkgs.callPackage ./pkgs/heroic-appimage { };
   # some-qt5-package = pkgs.libsForQt5.callPackage ./pkgs/some-qt5-package { };
   # ...
 }
