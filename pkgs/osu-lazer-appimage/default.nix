@@ -7,7 +7,7 @@ let
   src = fetchurl {
     url = "https://github.com/ppy/osu/releases/download/${version}/osu.AppImage";
     name = "osu-${version}.AppImage";
-    sha256 = "00ebf0bbb3b563b83b425f5dec1ed8c0a9d9a0533798066fd2673b032174033b";
+    sha256 = "sha256-wF75Wn3ZazkvitCmr4V9cBcD4JblhFqvGPYbNW1ETPg=";
   };
   appimageContents = appimageTools.extractType2 { inherit name src; };
 in
