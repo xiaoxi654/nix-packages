@@ -2,12 +2,12 @@
 
 let
   pname = "osu-lazer-appimage";
-  version = "2022.1101.0";
+  version = "2022.1208.0";
   name = "${pname}-${version}";
   src = fetchurl {
     url = "https://github.com/ppy/osu/releases/download/${version}/osu.AppImage";
     name = "osu-${version}.AppImage";
-    sha256 = "sha256-twztqNlqJInNYATLNsLSvyPykSMXMT6dzpNWMJwfnpI=";
+    sha256 = "sha256-47F9QZlIuGYze+9N1NTQLFBAiAQIpgiiLWzhgAC0Fs4=";
   };
   appimageContents = appimageTools.extractType2 { inherit name src; };
 in
